@@ -1,0 +1,18 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Start Rhino 8",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "Build TensoMatter",
+      "program": "C:\\Program Files\\Rhino 8\\System\\Rhino.exe",
+      "args": [
+        "/nosplash",
+        "/runscript=_Grasshopper"
+      ],
+      "cwd": "${workspaceFolder}",
+      "stopAtEntry": false
+    }
+  ]
+}

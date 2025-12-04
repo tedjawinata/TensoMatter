@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <!-- .NET Framework 4.8 Buat Rhino 7 dan 8 -->
+    <TargetFramework>net48</TargetFramework>
+    <OutputType>Library</OutputType>
+    <AssemblyName>TensoMatter</AssemblyName>
+    <RootNamespace>TensoMatter</RootNamespace>
+  </PropertyGroup>
+
+  <!-- Path untuk Rhino -->
+  <ItemGroup>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="RhinoCommon">
+      <HintPath>C:\Program Files\Rhino 8\System\RhinoCommon.dll</HintPath>
+    </Reference>
+    <Reference Include="Grasshopper">
+      <HintPath>C:\Program Files\Rhino 8\Plug-ins\Grasshopper\Grasshopper.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <!-- Nyoba dipindahin hasil .dll ke folder Libraries Grasshopper sebagai .gha -->
+  <Target Name="PostBuild" AfterTargets="Build">
+    <PropertyGroup>
+      <GrasshopperLibDir>$(AppData)\Grasshopper\Libraries</GrasshopperLibDir>
+    </PropertyGroup>
+    <MakeDir Directories="$(GrasshopperLibDir)" />
+    <Copy
+      SourceFiles="$(TargetPath)"
+      DestinationFiles="$(GrasshopperLibDir)\$(AssemblyName).gha"
+      OverwriteReadOnlyFiles="true" />
+  </Target>
+</Project>

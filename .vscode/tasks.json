@@ -1,0 +1,17 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build TensoMatter",
+      "type": "shell",
+      "command": "dotnet",
+      "args": [
+        "build",
+        "TensoMatter.csproj",
+        "-c",
+        "Debug"
+      ],
+      "problemMatcher": "$msCompile"
+    }
+  ]
+}
