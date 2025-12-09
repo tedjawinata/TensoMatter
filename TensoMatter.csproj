@@ -24,9 +24,7 @@
       <GrasshopperLibDir>$(AppData)\Grasshopper\Libraries</GrasshopperLibDir>
     </PropertyGroup>
     <MakeDir Directories="$(GrasshopperLibDir)" />
-    <Copy
-      SourceFiles="$(TargetPath)"
-      DestinationFiles="$(GrasshopperLibDir)\$(AssemblyName).gha"
-      OverwriteReadOnlyFiles="true" />
+    <!-- Jika Rhino sedang berjalan file .gha mungkin terkunci; cek proses Rhino sebelum menyalin -->
+    <Exec Command="powershell -NoProfile -Command if (-not (Get-Process -Name 'Rhino' -ErrorAction SilentlyContinue)) { Copy-Item -Path '$(TargetPath)' -Destination '$(GrasshopperLibDir)\$(AssemblyName).gha' -Force; Write-Host 'Copied assembly to Grasshopper Libraries.' } else { Write-Host 'Skipping copy: Rhino is running and locking the .gha file.' }" />
   </Target>
 </Project>

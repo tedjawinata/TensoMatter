@@ -1,4 +1,4 @@
-# TensoMatter AI Coding Instructions
+# TensoMatter Coding Instructions
 
 ## Project Overview
 **TensoMatter** is a .NET 4.8 Grasshopper plugin for Rhino 7/8 that provides material property selection and management for tensile membrane/fabric analysis. It's a lightweight library focused on materials with specific mechanical properties (E, thickness, Poisson ratio, anisotropic stiffness).

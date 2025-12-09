@@ -24,7 +24,7 @@ namespace TensoMatter
         public TM_MaterialLibrary()
         : base("TM Material Library",
                "MatLib",
-               "Material selector with dropdown",
+               "Material selector with dropdown | Material yang sudah di prasiapkan untuk dipakai langsung.",
                "TensoMatter",
                "Materials")
         { }
