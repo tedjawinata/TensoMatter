@@ -4,6 +4,10 @@
 
 For Young Lecturer Research - Parahyangan Catholic University - Year One
 
+Galuh K. Tedjawinata
+
+
+
 Current Build:
 https://www.figma.com/board/HKpc0Y2dkBE8jLnaw9OKCq/TensoMatter?node-id=1-219&t=mAUbMRvoqPhwH4bw-1
 
