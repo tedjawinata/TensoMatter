@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TensoMatter")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b58943f0b6a304cf1729a8729d4a96cc2b8b07d3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5f83a65e697ddb02f4704146813330ae215e8681")]
 [assembly: System.Reflection.AssemblyProductAttribute("TensoMatter")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TensoMatter")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

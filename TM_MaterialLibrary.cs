@@ -79,7 +79,7 @@ namespace TensoMatter
 
                 case MaterialType.ETFE:
                     return new TmMaterial {
-                        Name="ETFE Foil",
+                        Name="PET Plastic Foil (ETFE)",
                         E=1.5e9,
                         Thickness=0.00025,
                         Poisson=0.40,
